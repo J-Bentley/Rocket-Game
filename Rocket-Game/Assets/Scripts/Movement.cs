@@ -2,10 +2,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
 
-    Rigidbody rb;
-    AudioSource audioSource;
+
     [SerializeField] float mainThrust;
     [SerializeField] float rotationThrust;
+    [SerializeField] AudioClip thrustSound;
+    [SerializeField] ParticleSystem mainBooster;
+    [SerializeField] ParticleSystem rightBooster;
+    [SerializeField] ParticleSystem leftBooster;
+    Rigidbody rb;
+    AudioSource audioSource;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -13,30 +18,61 @@ public class Movement : MonoBehaviour {
     }
 
     void Update() {
-        Thrust();
-        Rotation();
+        ProcessThrust();
+        ProcessRotation();
     }
 
-    void Thrust() {
+    void ProcessThrust() {
         if (Input.GetKey(KeyCode.Space)) {
-            rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
-            if(!audioSource.isPlaying) {
-                audioSource.Play();
-            }
-        } else {
-            audioSource.Stop();
+            StartThrusting();
+        }
+        else {
+            StopThrusting();
         }
     }
 
-    void Rotation() {
-        if (Input.GetKey(KeyCode.A))
-        {
-            ApplyRotation(rotationThrust);
+    void ProcessRotation() {
+        if (Input.GetKey(KeyCode.A)) {
+            ThrustLeft();
         }
         else if (Input.GetKey(KeyCode.D)) {
-            ApplyRotation(-rotationThrust);
+            ThrustRight();
+        }
+        else {
+            rightBooster.Stop();
+            leftBooster.Stop();
         }
     }
+
+    void StartThrusting() {
+        rb.AddRelativeForce(Vector3.up * mainThrust * Time.deltaTime);
+        if (!audioSource.isPlaying) {
+            audioSource.PlayOneShot(thrustSound);
+        }
+        if (!mainBooster.isPlaying) {
+            mainBooster.Play();
+        }
+    }
+
+    void StopThrusting() {
+        audioSource.Stop();
+        mainBooster.Stop();
+    }
+
+    void ThrustLeft() {
+        ApplyRotation(rotationThrust);
+        if (!leftBooster.isPlaying) {
+            leftBooster.Play();
+        }
+    }
+
+    void ThrustRight() {
+        ApplyRotation(-rotationThrust);
+        if (!rightBooster.isPlaying) {
+            rightBooster.Play();
+        }
+    }
+
 
     void ApplyRotation(float rotationThisFrame) {
         rb.freezeRotation = true; //forces user input to take priority over physics system
