@@ -18,7 +18,7 @@ bool gameisPaused = false;
         pauseMenu.SetActive(true);
     }
 
-    void ResumeGame() {
+    public void ResumeGame() {
         gameisPaused = false;
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
