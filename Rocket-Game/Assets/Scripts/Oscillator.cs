@@ -3,12 +3,11 @@ using UnityEngine;
 public class Oscillator : MonoBehaviour {
     Vector3 startingPosition;
     [SerializeField] Vector3 movementVector;
-    float movemementFactor;
+    [SerializeField] [Range(0,1)] float movemementFactor;
     [SerializeField] float period = 2f;
 
     void Start() {
         startingPosition = transform.position;
-        
     }
 
     void Update() {
