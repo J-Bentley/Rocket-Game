@@ -17,11 +17,10 @@ public class CollisionHandler : MonoBehaviour {
     
     void OnCollisionEnter(Collision other) {
         if (isTransitioning) {
-            return; //return = dont go any further into this code block
+            return;
         }
         switch (other.gameObject.tag) {
             case "Friendly":
-                Debug.Log("Friendly hit");
                 break;
             case "Finish":
                 StartSuccessSequence();
@@ -35,7 +34,7 @@ public class CollisionHandler : MonoBehaviour {
     void StartSuccessSequence() {
         successParticles.Play();
         isTransitioning = true;
-        audioSource.Stop(); //stops movement script from making thrust sound, they share same audiosource component
+        audioSource.Stop(); 
         audioSource.PlayOneShot(successSound);
         GetComponent<Movement>().enabled = false;
         Invoke("LoadNextLevel", LevelLoadDelay);
