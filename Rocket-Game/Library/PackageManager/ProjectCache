@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638499202911921787
-    m_Hash: 1926115513
+      ticks: 638504632928123258
+    m_Hash: 966662668
   m_LockFileStatus:
     m_FilePath: C:/Unity/Projects/Rocket-Game/Rocket-Game/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638499202911990123
-    m_Hash: 3588270767
+      ticks: 638504632928234765
+    m_Hash: 134523832
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -332,6 +332,100 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 2.2.0
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.connect.share@4.2.3
+  testable: 0
+  isDirectDependency: 1
+  version: 4.2.3
+  source: 1
+  resolvedPath: C:\Unity\Projects\Rocket-Game\Rocket-Game\Library\PackageCache\com.unity.connect.share@4.2.3
+  assetPath: Packages/com.unity.connect.share
+  name: com.unity.connect.share
+  displayName: WebGL Publisher
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: tool
+  description: This tool allows you to make a WebGL build of your current project
+    and upload it to Unity's website, where it can be shared with others.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 1.0.0-preview
+    - 1.0.1-preview
+    - 1.0.2-preview
+    - 1.0.3-preview
+    - 1.0.4-preview
+    - 1.0.5-preview
+    - 1.0.6-preview.2
+    - 1.0.7-preview
+    - 1.0.8-preview
+    - 1.0.9-preview
+    - 1.0.10-preview
+    - 1.1.0-preview.1
+    - 1.2.0-preview.1
+    - 2.0.1-preview
+    - 2.0.2-preview.3
+    - 2.0.2-preview.4
+    - 2.0.3
+    - 2.0.5
+    - 2.0.6
+    - 2.1.0
+    - 3.0.0
+    - 4.0.1
+    - 4.0.2
+    - 4.0.3
+    - 4.1.0
+    - 4.1.1
+    - 4.2.1
+    - 4.2.2
+    - 4.2.3
+    compatible:
+    - 4.2.3
+    recommended: 4.2.3
+    deprecated: []
+  dependencies:
+  - name: com.unity.editorcoroutines
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 1.0.2
+  resolvedDependencies:
+  - name: com.unity.editorcoroutines
+    version: 1.0.0
+  - name: com.unity.settings-manager
+    version: 2.0.1
+  keywords:
+  - webgl
+  - share
+  - connect
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637695698090000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.connect.share.git
+    revision: 9a66a825d48494378f81fc94289eddd505df1c40
+    path: 
+  unityLifecycle:
+    version: 4.2.3
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -2997,6 +3091,21 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
     - 3.2.1
     compatible:
     - 3.2.1
@@ -3015,7 +3124,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -3984,6 +4093,68 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.unity.settings-manager@2.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 2.0.1
+  source: 1
+  resolvedPath: C:\Unity\Projects\Rocket-Game\Rocket-Game\Library\PackageCache\com.unity.settings-manager@2.0.1
+  assetPath: Packages/com.unity.settings-manager
+  name: com.unity.settings-manager
+  displayName: Settings Manager
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: asset
+  description: A framework for making any serializable field a setting, complete
+    with a pre-built settings interface.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 0.1.0-preview.4
+    - 0.1.0-preview.8
+    - 1.0.0
+    - 1.0.1
+    - 1.0.2
+    - 1.0.3
+    - 2.0.0
+    - 2.0.1
+    compatible:
+    - 2.0.1
+    recommended: 2.0.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 637744099390000000
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
+    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
+    path: 
+  unityLifecycle:
+    version: 2.0.1
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.burst@1.8.10
   testable: 0
   isDirectDependency: 0
@@ -4261,6 +4432,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.2
     - 2.4.0-pre.5
     - 2.4.0
+    - 2.4.1
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4281,6 +4453,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.2
     - 2.4.0-pre.5
     - 2.4.0
+    - 2.4.1
     recommended: 1.2.4
     deprecated: []
   dependencies:
@@ -4327,68 +4500,6 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.4
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.unity.settings-manager@2.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 2.0.1
-  source: 1
-  resolvedPath: C:\Unity\Projects\Rocket-Game\Rocket-Game\Library\PackageCache\com.unity.settings-manager@2.0.1
-  assetPath: Packages/com.unity.settings-manager
-  name: com.unity.settings-manager
-  displayName: Settings Manager
-  author:
-    name: 
-    email: 
-    url: 
-  category: 
-  type: asset
-  description: A framework for making any serializable field a setting, complete
-    with a pre-built settings interface.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 2.0.0
-    - 2.0.1
-    compatible:
-    - 2.0.1
-    recommended: 2.0.1
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords: []
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
-  documentationUrl: 
-  hasRepository: 1
-  repository:
-    type: git
-    url: https://github.com/Unity-Technologies/com.unity.settings-manager.git
-    revision: 9b7c12d04ef880168151c127fd6b37b5931197dc
-    path: 
-  unityLifecycle:
-    version: 2.0.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0
@@ -4570,6 +4681,12 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 0.1.6-preview.2
+    - 1.0.0-preview.1
+    - 1.10.0-preview.1
+    - 1.10.1-preview.1
+    - 1.10.1
+    - 1.10.2
     - 1.11.4
     compatible:
     - 1.11.4
@@ -4588,7 +4705,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637852971930000000
   documentationUrl: 
   hasRepository: 1
   repository:
