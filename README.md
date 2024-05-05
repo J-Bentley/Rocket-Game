@@ -1,5 +1,5 @@
 # Rocket-Game
-[Unity Play](https://play.unity.com/mg/other/templatedata-554)
+[PLAY GAME](https://play.unity.com/mg/other/templatedata-554)
 
 # CONTROLS
 Steer Rocket: A/D  
