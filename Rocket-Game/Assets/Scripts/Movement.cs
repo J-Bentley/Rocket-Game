@@ -5,7 +5,6 @@ public class Movement : MonoBehaviour {
 
     [SerializeField] float mainThrust;
     [SerializeField] float rotationThrust;
-    [SerializeField] float thrustDemultiplier;
     [SerializeField] AudioClip thrustSound;
     [SerializeField] ParticleSystem mainBooster;
     [SerializeField] ParticleSystem rightBooster;
